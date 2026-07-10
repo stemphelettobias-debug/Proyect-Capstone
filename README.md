@@ -3,7 +3,7 @@ Sistema que consume datos de un Dispositivo IoT mediante una API REST, los proce
 
 ¿Cómo levantar el contenedor con: docker-compose?
 
-Abrir en la terminal
+Abrir en la terminal:
 ```bash
    docker compose up -d
 ```
