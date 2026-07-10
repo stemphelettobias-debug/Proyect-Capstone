@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: node-red-iot
+    restart: unless-stopped
+    ports:
+      - "1880:1880"
+    volumes:
+      - node_red_data:/data
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+
+volumes:
+  node_red_data:
